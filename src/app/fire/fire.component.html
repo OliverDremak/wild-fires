@@ -1,0 +1,41 @@
+@if (model)
+{<div class="modal" tabindex="-1" style="display: block;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Erdőtűz hozzáadása</h5>
+                <button type="button" class="btn-close" (click)="model = undefined"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Név</label>
+                        <input type="text" class="form-control" id="name" [value]="model.name" (change)="model.name = getValue($event)">
+                    </div>
+                    <div class="mb-3">
+                        <label for="location" class="form-label">Terület</label>
+                        <input type="text" class="form-control" id="location" [value]="model.location" (change)="model.location = getValue($event)">
+                    </div>
+                    <div class="mb-3">
+                        <label for="date" class="form-label">Dátum</label>
+                        <input type="text" class="form-control" id="date" [value]="model.date" (change)="model.date = getValue($event)">
+                    </div>
+                    <div class="mb-3">
+                        <label for="description" class="form-label">Leírás</label>
+                        <textarea class="form-control" id="description" [value]="model.description" (change)="model.description = getValue($event)"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="source" class="form-label">Forrás</label>
+                        <input type="text" class="form-control" id="source" [value]="model.source" (change)="model.source = getValue($event)">
+                    </div>
+                </form>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" (click)="model = undefined">Mégse</button>
+                    <button type="button" class="btn btn-success" (click)="save()">Hozzáadás</button>
+                </div>    
+            </div>
+        </div>
+    </div>
+</div>
+
+}
