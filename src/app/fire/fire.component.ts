@@ -19,8 +19,17 @@ export class FireComponent {
     return Number(this.getValue(event));
   }
 
+  validate(): boolean {
+    if (!this.model?.name || !this.model.location || !this.model.date || !this.model.description || !this.model.source) {
+      console.error('All fields are required.');
+      return false;
+    }
+    return true;
+  }
+
   save(){
-    //TODO: mezok ellenorzese
-    this.saved.emit(this.model);
+    if (this.validate()) {
+      this.saved.emit(this.model);
+    }
   }
 }

@@ -1,5 +1,5 @@
 <div class="container">
-    <h1 class="text-center mb-3">Erdőtüzek</h1>
+    <h1 class="text-center mb-3 h-150">Erdőtüzek</h1>
     <table class="table table-striped table-bordered">
         <tr class="text-center bg-dark text-white">
             <th>
@@ -12,7 +12,7 @@
             <th>Forrás</th>
         </tr>
         @for (fire of fires; track $index){
-            <tr>
+            <tr class="text-center bg-white">
                 <td class="text-center">
                     <span (click)="modFire(fire)">&#9998;</span>
                     <span (click)="delFire(fire)">&#10006;</span>
@@ -21,10 +21,17 @@
                 <td>{{ fire.location }}</td>
                 <td>{{ fire.date }}</td>
                 <td>{{ fire.description }}</td>
-                <td>{{ fire.source }}</td>
+                <td>
+                    <a [href]="fire.source" target="_blank">
+                        <button class="btn btn-primary">
+                            Forrás
+                        </button>
+                    </a>
+                </td>
             </tr>
         }
     </table>
     <app-fire [model]="modify" (saved)="saveModify($event)"></app-fire>
     <app-fire [model]="new" (saved)="saveNew($event)"></app-fire>
+    <app-alert></app-alert>
 </div>

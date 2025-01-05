@@ -1,0 +1,84 @@
+{
+  "fireData": [
+      {
+          "id": 1,
+          "name": "Big Rusty Wildfire",
+          "location": "Hainesport, New Jersey",
+          "date": "November 18, 2024",
+          "description": "A 40-acre wildfire threatened 20 homes in Burlington County. Firefighters contained 20% of the blaze by 9 p.m., preventing damage to the residences. No evacuations or injuries were reported. The cause is under investigation.",
+          "source": "https://nypost.com/2024/11/18/us-news/new-jersey-wildfire-threatens-to-engulf-20-homes-as-crews-battle-blaze/"
+      },
+      {
+          "id": 2,
+          "name": "Jennings Creek Wildfire",
+          "location": "New Jersey-New York Border",
+          "date": "November 2024",
+          "description": "The largest wildfire in New York since 2008, burning approximately 5,000 acres. Severe drought and unusually warm weather contributed to the fire's spread. An 18-year-old park employee tragically lost their life during the incident.",
+          "source": "https://www.wsj.com/us-news/climate-environment/wildfires-and-drought-ravage-the-northeast-in-maps-acaf528d"
+      },
+      {
+          "id": 3,
+          "name": "Unnamed Wildfires",
+          "location": "North Dakota",
+          "date": "October 5, 2024",
+          "description": "Two wildfires near Keene and New Town were sparked by natural gas flares at oil wells. Combined, they burned 36.3 square kilometers, damaging land and livestock. No human casualties were reported.",
+          "source": "https://apnews.com/article/203920026741e1cbd64e51221bcd1ea4"
+      },
+      {
+          "id": 4,
+          "name": "Franklin Fire",
+          "location": "Malibu, California",
+          "date": "December 24, 2024",
+          "description": "The Franklin Fire in Malibu, California, forced evacuations and caused significant damage. It was fueled by dry weather patterns and the notorious Santa Ana winds, which peak in December and have contributed to warmer-than-average temperatures in parts of Southern California.",
+          "source": "https://apnews.com/article/c375a777c4d358ad386ef98b5071c8bc"
+      },
+      {
+          "id": 5,
+          "name": "Park Fire",
+          "location": "Butte & Tehama, California",
+          "date": "July 24, 2024",
+          "description": "The Park Fire was the largest of 7,473 California wildland fires in 2024, burning a cumulative 173,854 hectares across multiple counties. Arson was credited as the initial cause. The blaze destroyed over 700 structures and ranked as the fourth largest wildfire in US history. Fire suppression costs alone were estimated at $310 million.",
+          "source": "https://www.fire.ca.gov/incidents/2024/7/24/park-fire"
+      },
+      {
+          "id": 6,
+          "name": "Durkee Fire",
+          "location": "Baker & Malheur, Oregon",
+          "date": "July 17, 2024",
+          "description": "The Durkee Fire emerged during Oregon's largest wildfire season in history. Ignited by a lightning strike, it ravaged an estimated 119,084 hectares before eventual containment. The fire destroyed several buildings but remained largely restricted to less densely populated areas. Extensive smoke prompted the American Lung Association to release public service announcements warning of 'extreme harm' due to air quality in the region.",
+          "source": "https://oregoncapitalchronicle.com/2024/07/25/firefighters-in-oregon-battle-biggest-blaze-in-county-with-thousands-facing-evacuation-orders/"
+      },
+      {
+          "id": 7,
+          "name": "Corral Fire",
+          "location": "San Joaquin, California",
+          "date": "June 1, 2024",
+          "description": "The Corral Fire burned 14,168 hectares in San Joaquin, California. Two firefighters were injured, and Interstate 580 was closed in both directions due to the blaze.",
+          "source": "https://www.fire.ca.gov/incidents/2024/6/1/corral-fire"
+      },
+      {
+          "id": 8,
+          "name": "Lost Fire",
+          "location": "Kern, California",
+          "date": "June 6, 2024",
+          "description": "The Lost Fire burned 3,600 hectares in Kern, California. It was one of the significant wildfires in the state during 2024.",
+          "source": "https://www.fire.ca.gov/incidents/2024/6/6/lost-fire"
+      },
+      {
+          "id": 9,
+          "name": "Post Fire",
+          "location": "Los Angeles & Ventura, California",
+          "date": "June 15, 2024",
+          "description": "The Post Fire began near Gorman, burning parallel to Interstate 5. It caused the evacuation of approximately 1,200 people in nearby recreation areas and damaged two structures.",
+          "source": "https://www.latimes.com/california/story/2024-06-15/fast-burning-fire-prompts-evacuations-freeway-closure-near-gormon"
+      },
+      {
+          "id": 10,
+          "name": "Wildcat Fire",
+          "location": "Maricopa, Arizona",
+          "date": "May 18, 2024",
+          "description": "The Wildcat Fire burned 14,402 hectares in Maricopa, Arizona. It was reportedly human-caused, with estimated damage costs over $7 million.",
+          "source": "https://inciweb.wildfire.gov/incident-information/aztnf-wildcat-fire"
+      }
+  ]
+}

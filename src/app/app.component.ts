@@ -3,10 +3,11 @@ import { RouterOutlet } from '@angular/router';
 import { FireModel } from './models.ts/fire-model';
 import { DataService } from '../sevices/data.service';
 import { FireComponent } from "./fire/fire.component";
+import { AlertComponent } from "../alert/alert.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, FireComponent],
+  imports: [RouterOutlet, FireComponent, AlertComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
