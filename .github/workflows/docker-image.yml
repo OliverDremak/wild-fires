@@ -19,7 +19,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Build the Docker image
         run: |
-          docker build . --file Dockerfile --tag ghcr.io/OliverDremak/wild-fires:$IMAGE_TAG --tag ghcr.io/OliverDremak/wild-fires:latest
+          docker build . --file Dockerfile --tag ghcr.io/oliverdremak/wild-fires:$IMAGE_TAG --tag ghcr.io/oliverdremak/wild-fires:latest
           docker login ghcr.io -u OliverDremak -p ${{secrets.GHCL_TOKEN}}
-          docker push ghcr.io/OliverDremak/wild-fires:$IMAGE_TAG
-          docker push ghcr.io/OliverDremak/wild-fires-list:latest
+          docker push ghcr.io/oliverdremak/wild-fires:$IMAGE_TAG
+          docker push ghcr.io/oliverdremak/wild-fires-list:latest
