@@ -1,0 +1,25 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Set Image Tag
+        run: |
+          echo "IMAGE_TAG=$(date +%s)" >> $GITHUB_ENV
+      - uses: actions/checkout@v4
+      - name: Build the Docker image
+        run: |
+          docker build . --file Dockerfile --tag ghcr.io/OliverDremak/wild-fires:$IMAGE_TAG --tag ghcr.io/OliverDremak/wild-fires:latest
+          docker login ghcr.io -u OliverDremak -p ${{secrets.GHCL_TOKEN}}
+          docker push ghcr.io/OliverDremak/wild-fires:$IMAGE_TAG
+          docker push ghcr.io/OliverDremak/wild-fires-list:latest
