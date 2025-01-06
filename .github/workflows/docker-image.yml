@@ -22,4 +22,4 @@ jobs:
           docker build . --file Dockerfile --tag ghcr.io/oliverdremak/wild-fires:$IMAGE_TAG --tag ghcr.io/oliverdremak/wild-fires:latest
           docker login ghcr.io -u OliverDremak -p ${{secrets.WILDFIRES}}
           docker push ghcr.io/oliverdremak/wild-fires:$IMAGE_TAG
-          docker push ghcr.io/oliverdremak/wild-fires-list:latest
+          docker push ghcr.io/oliverdremak/wild-fires:latest
